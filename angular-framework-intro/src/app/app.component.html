@@ -1,6 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<p>
+<p [ngClass]="{updated: name != 'Sattar'}">
   {{ name }}
 </p>
+<p *ngIf="name != 'Sattar'">Name Updated!</p>
 <button (click)="onChangeName()">Change Name</button>
+<button (click)="onAddElement()">New Element</button>
+<ul>
+  <li 
+    *ngFor="let el of elements"
+    [id]="'element' + el"
+    [ngStyle]="{backgroundColor: getColor(el)}">
+    Element {{ el }}
+  </li>
+</ul>
 
