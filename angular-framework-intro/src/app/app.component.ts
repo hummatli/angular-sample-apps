@@ -20,4 +20,8 @@ export class AppComponent {
   getColor(element) {
     return element % 2 === 0 ? 'green' : 'red' 
   }
+
+  onUserWasClicked(usrName: string) {
+    alert(usrName)
+  }
 }

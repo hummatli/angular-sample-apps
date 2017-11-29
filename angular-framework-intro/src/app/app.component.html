@@ -1,5 +1,5 @@
-<app-username [username]="'Hasan'"></app-username>
-<app-username [username]="'Fariz'"></app-username>
+<app-username [username]="'Hasan'" (userClicked)="onUserWasClicked($event)"></app-username>
+<app-username [username]="'Fariz'" (userClicked)="onUserWasClicked($event)"></app-username>
 <p [ngClass]="{updated: name != 'Sattar'}">
   {{ name }}
 </p>
