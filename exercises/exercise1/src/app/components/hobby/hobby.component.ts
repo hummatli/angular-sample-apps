@@ -15,7 +15,7 @@ interface HobbyObject {
     `
 })
 
-export class Hobby {
+export class HobbyComponent {
     @Input() hobby: HobbyObject
     @Output() hobbyClicked = new EventEmitter<HobbyObject>()
 
