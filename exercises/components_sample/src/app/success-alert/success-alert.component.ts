@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
     template: `
         <h3>Success!!!</h3>
     `,
-    styles: ['h3 { color: green } ']
+    styles: [`
+        h3 { 
+            color: green;
+        } 
+    `]
 })
 
 export class SuccessAlertComponent { }
